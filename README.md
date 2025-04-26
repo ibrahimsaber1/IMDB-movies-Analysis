@@ -1,2 +1,2 @@
-# IMDB-movies-Analysis
+# Amazon-Sales-Analysis
 Mid Project
