@@ -33,7 +33,6 @@ https://www.kaggle.com/datasets/mdsazzatsardar/amazonsalesreport
 | `promotion-ids` | IDs of promotions or offers applied to the order |
 | `B2B` | Boolean indicating if the order is a Business-to-Business transaction (True/False) |
 | `fulfilled-by` | Service used for order fulfillment (e.g., Easy Ship) |
-| `Unnamed: 22` | Empty column with no specific data |
 
 ## Notes
 - This dataset appears to focus on fashion items (kurtas, dresses, tops, sets)
