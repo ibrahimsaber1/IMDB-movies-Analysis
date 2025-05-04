@@ -1,0 +1,80 @@
+order_id
+120350
+['405-8078784-5731545' '171-9198151-1101146' '404-0687676-7273146' ...
+ '407-9547469-3152358' '402-6184140-0545956' '408-7436540-8728312']
+****************************************************************************************************
+status
+13
+['Cancelled' 'Shipped - Delivered to Buyer' 'Shipped'
+ 'Shipped - Returned to Seller' 'Shipped - Rejected by Buyer'
+ 'Shipped - Lost in Transit' 'Shipped - Out for Delivery'
+ 'Shipped - Returning to Seller' 'Shipped - Picked Up' 'Pending'
+ 'Pending - Waiting for Pick Up' 'Shipped - Damaged' 'Shipping']
+****************************************************************************************************
+fulfilment
+2
+['Merchant' 'Amazon']
+****************************************************************************************************
+sales_channel
+2
+['Amazon.in' 'Non-Amazon']
+****************************************************************************************************
+ship_service_level
+2
+['Standard' 'Expedited']
+****************************************************************************************************
+style
+1377
+['SET389' 'JNE3781' 'JNE3371' ... 'SET066' 'J0286' 'SET045']
+****************************************************************************************************
+sku
+7195
+['SET389-KR-NP-S' 'JNE3781-KR-XXXL' 'JNE3371-KR-XL' ... 'JNE3370-KR-S'
+ 'JNE3678-TU-XXL' 'SET045-KR-NP-M']
+****************************************************************************************************
+category
+9
+['Set' 'kurta' 'Western Dress' 'Top' 'Ethnic Dress' 'Bottom' 'Saree'
+ 'Blouse' 'Dupatta']
+****************************************************************************************************
+size
+11
+['S' '3XL' 'XL' 'L' 'XXL' 'XS' '6XL' 'M' '4XL' '5XL' 'Free']
+****************************************************************************************************
+asin
+7190
+['B09KXVBD7Z' 'B09K3WFS32' 'B07WV4JV4D' ... 'B081X6MVKK' 'B0943HSR64'
+ 'B07N81TFNY']
+****************************************************************************************************
+courier_status
+3
+[nan 'Shipped' 'Cancelled' 'Unshipped']
+****************************************************************************************************
+currency
+1
+['INR' nan]
+****************************************************************************************************
+ship_city
+8955
+['MUMBAI' 'BENGALURU' 'NAVI MUMBAI' ... 'GULABPURA, Distt BHILWARA'
+ 'Prayagraj (ALLAHABAD)' 'Halol']
+****************************************************************************************************
+ship_state
+69
+['MAHARASHTRA' 'KARNATAKA' 'PUDUCHERRY' 'TAMIL NADU' 'UTTAR PRADESH'
+ 'CHANDIGARH' 'TELANGANA' 'ANDHRA PRADESH' 'RAJASTHAN' 'DELHI' 'HARYANA'
+ 'ASSAM' 'JHARKHAND' 'CHHATTISGARH' 'ODISHA' 'KERALA' 'MADHYA PRADESH'
+ 'WEST BENGAL' 'NAGALAND' 'Gujarat' 'UTTARAKHAND' 'BIHAR'
+ 'JAMMU & KASHMIR' 'PUNJAB' 'HIMACHAL PRADESH' 'ARUNACHAL PRADESH'
+ 'MANIPUR' 'Goa' 'MEGHALAYA' 'GOA' 'TRIPURA' 'LADAKH' 'DADRA AND NAGAR'
+ 'SIKKIM' 'Delhi' 'ANDAMAN & NICOBAR ' 'Punjab' 'Rajshthan' 'Manipur'
+ 'rajasthan' 'Odisha' 'NL' 'Bihar' 'MIZORAM' 'punjab' 'New Delhi'
+ 'Rajasthan' 'Punjab/Mohali/Zirakpur' 'Puducherry' 'delhi' 'RJ'
+ 'Chandigarh' 'orissa' 'LAKSHADWEEP' 'goa' 'PB' 'APO' 'Arunachal Pradesh'
+ 'AR' 'Pondicherry' 'Sikkim' 'Arunachal pradesh' 'Nagaland' 'bihar'
+ 'Mizoram' 'rajsthan' 'Orissa' 'Rajsthan' 'Meghalaya']
+****************************************************************************************************
+ship_country
+1
+['IN']
+****************************************************************************************************
