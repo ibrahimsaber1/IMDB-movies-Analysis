@@ -183,16 +183,18 @@ def show_product_customer_analysis():
             col1, col2 = st.columns(2)
             
             with col1:
+                # Find the most popular size for each category
                 popular_sizes = page_filtered_df.groupby(['category', 'size'])['Quantity'].sum()
                 if not popular_sizes.empty:
-                    popular_sizes = popular_sizes.groupby('category').nlargest(1).reset_index(level=1)
+                    # Get the size with maximum quantity for each category
+                    popular_sizes_df = popular_sizes.reset_index()
+                    idx = popular_sizes_df.groupby('category')['Quantity'].idxmax()
+                    popular_sizes_result = popular_sizes_df.loc[idx]
                     
-                    fig = px.bar(popular_sizes.reset_index(), x='category', y='Quantity',
+                    fig = px.bar(popular_sizes_result, x='category', y='Quantity',
                                 color='size', title='Most Popular Size by Category')
                     fig.update_xaxes(tickangle=-45)
                     st.plotly_chart(fig, use_container_width=True)
-                else:
-                    st.info("No data available for the selected filters")
             
             with col2:
                 # Size revenue contribution

@@ -48,18 +48,20 @@ page = st.sidebar.radio(
 
 # Route to appropriate page
 if page == "🏠 Home":
-    from pages.home import show_home_page
+    from pages_files.home import show_home_page
     show_home_page()
 elif page == "🗺️ Geographic Analysis":
-    from pages.geographic_analysis import show_geographic_analysis
+    from pages_files.geographic_analysis import show_geographic_analysis
     show_geographic_analysis()
 elif page == "📅 Time Analysis":
-    from pages.time_analysis import show_time_analysis
+    from pages_files.time_analysis import show_time_analysis
     show_time_analysis()
 elif page == "🛍️ Product & Customer Analysis":
-    from pages.product_customer_analysis import show_product_customer_analysis
+    from pages_files.product_customer_analysis import show_product_customer_analysis
     show_product_customer_analysis()
 
 # Footer
 st.markdown("---")
-st.markdown("📊 Amazon Sales Dashboard | Data Analysis Project")
+st.markdown("📊 Amazon Sales Dashboard || Data Analysis Project || By IBRAHIM SABER")
+st.markdown("https://github.com/ibrahimsaber1")
+st.markdown("Github repo Link===> https://github.com/ibrahimsaber1/Amazon-Sales-Analysis")
