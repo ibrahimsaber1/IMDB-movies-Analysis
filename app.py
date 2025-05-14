@@ -1,5 +1,11 @@
 import streamlit as st
 import pandas as pd
+import base64
+
+# Function to convert image to base64
+def get_base64_of_image(img_path):
+    with open(img_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
 
 # Set page config
 st.set_page_config(
@@ -16,27 +22,83 @@ if 'selected_month' not in st.session_state:
 if 'selected_day' not in st.session_state:
     st.session_state.selected_day = 'All'
 
-# Custom CSS for better styling
+# Try to load the background image
+try:
+    # Update this path to match your actual file location
+    
+    img_path = ".\streamlit\static\powerBISalesDashboard-banner.jpg"
+    img_base64 = get_base64_of_image(img_path)
+    
+    # Custom CSS with base64 image
+    st.markdown(f"""
+    <style>
+        .metric-container {{
+            background-color: #f0f2f6;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }}
+        .stTabs [data-baseweb="tab-list"] {{
+            gap: 8px;
+        }}
+        .stTabs [data-baseweb="tab"] {{
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }}
+        .main-header {{
+            background-image: url("data:image/jpeg;base64,{img_base64}");
+            background-size: cover;
+            background-position: center;
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }}
+        .main-header h1 {{
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }}
+    </style>
+    """, unsafe_allow_html=True)
+except:
+    # Fallback CSS without background image
+    st.markdown("""
+    <style>
+        .metric-container {
+            background-color: #f0f2f6;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .stTabs [data-baseweb="tab-list"] {
+            gap: 8px;
+        }
+        .stTabs [data-baseweb="tab"] {
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .main-header {
+            background-color: #1f4788;
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+# Title with background
 st.markdown("""
-<style>
-    .metric-container {
-        background-color: #f0f2f6;
-        padding: 20px;
-        border-radius: 10px;
-        margin: 10px 0;
-    }
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
-    }
-    .stTabs [data-baseweb="tab"] {
-        height: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-</style>
+<div class="main-header">
+    <h1>🛍️ Amazon Sales Dashboard</h1>
+</div>
 """, unsafe_allow_html=True)
 
-st.title("🛍️ Amazon Sales Dashboard")
 st.markdown("---")
 
 # Sidebar navigation
