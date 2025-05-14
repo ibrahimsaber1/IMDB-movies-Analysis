@@ -4,6 +4,8 @@
 
 https://amazon-sales-analysis-in-india.streamlit.app/
 
+## Presentation :-
+https://www.canva.com/design/DAGnb7QmU-Y/gFd26tSPQlzGFGrGJ2kFmw/edit?utm_content=DAGnb7QmU-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Project Overview
 This project analyzes Amazon India's sales data to uncover insights about order patterns, customer behavior, product performance, and geographic trends. The analysis covers data from April to June 2022, containing 128,975 order records.
