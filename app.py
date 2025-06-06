@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import base64
 
-# Function to convert image to base64
+# Function to convert image to base64 
 def get_base64_of_image(img_path):
     with open(img_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
